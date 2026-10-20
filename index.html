@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a101b"><meta name="description" content="ATLAS 글로벌 투자 인텔리전스 — 투자 기회와 경제안보 리스크를 한눈에 탐색하세요.">
+<title>ATLAS — Global Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Noto+Sans+KR:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+<symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM9 12l2 2 4-4"/></symbol>
+<symbol id="file" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M8 13h8M8 17h6"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 8 3 8 3 9H3c0-1 3-1 3-9M10 21h4"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+<symbol id="trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-10M15 5h6v6"/></symbol>
+<symbol id="spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5zM20 2v4M18 4h4"/></symbol>
+<symbol id="settings" viewBox="0 0 24 24"><path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4zM3 12l9 4 9-4M3 17l9 4 9-4"/></symbol>
+<symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+<symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+</defs></svg>
+<aside class="sidebar">
+ <a class="brand" href="./"><div class="brand-mark">A<span></span></div><div>ATLAS<small>GLOBAL INTELLIGENCE</small></div></a>
+ <div class="workspace"><span class="workspace-icon">S</span><span>Strategic Workspace<small>Investment team</small></span><span class="down">⌄</span></div>
+ <div class="nav-label">WORKSPACE</div>
+ <nav aria-label="주 메뉴">
+ <button class="nav-item active" data-view="overview"><svg><use href="#grid"/></svg>오버뷰<span class="nav-indicator"></span></button>
+ <button class="nav-item" data-view="opportunities"><svg><use href="#globe"/></svg>투자 기회 탐색<span class="nav-count">128</span></button>
+ <button class="nav-item" data-view="risk"><svg><use href="#shield"/></svg>경제안보 리스크</button>
+ <button class="nav-item" data-view="watchlist"><svg><use href="#star"/></svg>관심 기업<span class="nav-count" id="watchCount">0</span></button>
+ <button class="nav-item" data-view="reports"><svg><use href="#file"/></svg>인사이트 리포트</button>
+ </nav>
+ <div class="nav-label second">INTELLIGENCE</div>
+ <button class="nav-item" id="aiNav"><svg><use href="#spark"/></svg>AI 리서치<span class="new-badge">NEW</span></button>
+ <button class="nav-item" id="monitorNav"><svg><use href="#bell"/></svg>모니터링<span class="tiny-dot"></span></button>
+ <div class="sidebar-bottom"><div class="network-status"><i></i>모든 시스템 정상<small>데모 워크스페이스</small></div><button class="nav-item" id="settingsBtn"><svg><use href="#settings"/></svg>워크스페이스 설정</button><div class="user"><div class="avatar">JK</div><div>김지훈<small>Investment Analyst</small></div><span>⌄</span></div></div>
+</aside>
+<div class="app">
+ <header class="topbar"><div class="breadcrumb">워크스페이스<svg><use href="#chevron"/></svg><span id="breadcrumb">오버뷰</span></div><div class="top-actions"><span class="demo-badge">DEMO</span><span class="date">2026. 10. 20. 화요일</span><span class="divider"></span><button class="icon-button notification" id="notificationBtn" aria-label="알림 열기"><svg><use href="#bell"/></svg><i></i></button><div class="avatar small">JK</div></div></header>
+ <main>
+  <div class="page-heading"><div><div class="eyebrow">YOUR GLOBAL PERSPECTIVE</div><h1 id="pageTitle">글로벌 인텔리전스 <span>오버뷰</span></h1><p id="pageDescription">기회를 연결하고, 리스크를 앞서 읽습니다.</p></div><div class="heading-actions"><button class="button subtle" id="exportBtn"><svg><use href="#download"/></svg>리포트 내보내기</button><button class="button primary" id="aiBtn"><svg><use href="#spark"/></svg>AI 인사이트</button></div></div>
+  <section class="metrics" aria-label="주요 지표">
+  <button class="metric" data-metric="all"><div class="metric-top">전체 투자 후보<svg><use href="#globe"/></svg></div><div class="metric-value">128<span class="change">↗ 12.3%</span><svg class="sparkline" viewBox="0 0 100 30"><path d="M0 28 12 24 22 25 33 14 44 18 56 10 66 14 80 6 90 8 100 1"/></svg></div><div class="metric-foot">지난 30일 대비 <span>+14개 기업</span></div></button>
+  <button class="metric" data-metric="new"><div class="metric-top">새로운 투자 기회<svg><use href="#spark"/></svg></div><div class="metric-value">16<span class="change">↗ 33.3%</span><svg class="sparkline blue" viewBox="0 0 100 30"><path d="M0 27 12 25 24 17 36 21 47 10 58 13 72 7 86 10 100 1"/></svg></div><div class="metric-foot">새롭게 포착된 기회 <span class="blue-text">최근 7일</span></div></button>
+  <button class="metric" data-metric="risk"><div class="metric-top">주의가 필요한 신호<svg class="amber"><use href="#shield"/></svg></div><div class="metric-value">23<span class="change amber">↗ 8.0%</span><div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="metric-foot">공급망 · 정책 · 지정학 <span class="amber">지속 모니터링</span></div></button>
+  <button class="metric" data-metric="review"><div class="metric-top">심층 검토 대기<svg class="purple"><use href="#file"/></svg></div><div class="metric-value">08<span class="metric-unit">개 기업</span><div class="mini-avatars"><span>N</span><span>Q</span><span>+6</span></div></div><div class="metric-foot">다음 의사결정을 위한 <span class="purple">리서치 준비</span></div></button>
+  </section>
+  <div class="primary-grid">
+   <section class="panel map-panel"><div class="panel-heading"><div><h2>글로벌 기회 지도 <span class="live-tag"><i></i>LIVE VIEW</span></h2><p>투자 기회와 경제안보 신호를 한눈에</p></div><div class="segmented" aria-label="지도 표시"><button class="active" data-layer="opportunity">투자 기회</button><button data-layer="risk">리스크</button></div></div>
+    <div class="map-filters"><button class="filter-chip active" data-region="all">전 세계 <span>128</span></button><button class="filter-chip" data-region="미국">북미</button><button class="filter-chip" data-region="독일">유럽</button><button class="filter-chip" data-region="한국">아시아</button><button class="filter-chip" data-region="호주">오세아니아</button></div>
+    <div class="map-container"><svg id="worldMap" role="img" aria-label="국가별 투자 기회와 공급망 연결 지도" viewBox="0 0 1000 470"><defs><pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#34445c" opacity=".45"/></pattern><radialGradient id="mapGlow"><stop stop-color="#183742" stop-opacity=".5"/><stop offset="1" stop-color="#0d1420" stop-opacity="0"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="3"/></filter><linearGradient id="route"><stop stop-color="#50d9bf" stop-opacity="0"/><stop offset=".5" stop-color="#50d9bf" stop-opacity=".65"/><stop offset="1" stop-color="#50d9bf" stop-opacity=".1"/></linearGradient></defs><rect width="1000" height="470" fill="url(#dots)"/><ellipse cx="530" cy="225" rx="420" ry="240" fill="url(#mapGlow)"/><g id="mapScene"><g id="countries"></g><g id="routes"></g><g id="mapPoints"></g></g></svg>
+     <div class="map-label" id="mapLabel"><span class="tiny-label">SELECTED OPPORTUNITY</span><strong><i></i>NexGen Minerals <span>↗</span></strong><small>캐나다 · 핵심 광물</small></div>
+     <div class="map-controls"><button aria-label="지도 확대" id="zoomIn">+</button><button aria-label="지도 축소" id="zoomOut">−</button><button aria-label="지도 초기화" id="zoomReset"><svg><use href="#globe"/></svg></button></div>
+     <div class="map-legend"><span><i class="dot mint"></i>투자 기회</span><span><i class="dot blue-bg"></i>관심 지역</span><span><i class="dot amber-bg"></i>리스크 신호</span><span class="route-legend">공급망 연결</span></div><div class="map-coordinates">GLOBAL COVERAGE <b>32 COUNTRIES</b></div>
+    </div>
+    <div class="map-summary"><div><span class="dot mint"></span><strong id="regionCount">32</strong>개국 모니터링 중</div><span>샘플 데이터 시뮬레이션</span><button id="mapExplore">기회 전체 보기 <svg><use href="#arrow"/></svg></button></div>
+   </section>
+   <aside class="panel company-panel"><div class="panel-heading compact"><h2>주목할 투자 기회</h2><span class="curated">CURATED</span></div><div class="company-identity"><div class="company-logo" id="companyLogo">N<span>↗</span></div><div><h3 id="companyName">NexGen Minerals</h3><p id="companyMeta">🇨🇦 캐나다 <span>·</span> 핵심 광물</p></div><button class="icon-button" id="saveBtn" aria-label="관심 기업 저장"><svg><use href="#star"/></svg></button></div><span class="opportunity-tag" id="companyTag">핵심 광물 공급망 다변화</span><p class="company-description" id="companyDescription"></p><div class="company-stats"><div><span>투자 매력도</span><strong id="companyScore">85<small>/ 100</small></strong></div><div><span>경제안보 리스크</span><strong class="mint-text" id="companyRisk">낮음 <i></i></strong></div></div><div class="risk-heading"><span>리스크 인덱스</span><span class="muted">안정적</span></div><div class="risk-track"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span id="riskMarker"></span></div><div class="risk-scale"><span>LOW</span><span>HIGH</span></div><div class="company-news"><svg><use href="#file"/></svg><div><p id="companyNews">신규 리튬 광산 개발 프로젝트 발표</p><span>주요 업데이트 · 데모 인사이트</span></div></div><button class="button detail-button" id="detailBtn">기업 상세 분석 <svg><use href="#arrow"/></svg></button></aside>
+  </div>
+  <div class="secondary-grid">
+   <section class="panel candidates" id="candidateSection"><div class="panel-heading compact"><div class="table-title"><h2 id="tableTitle">투자 후보 기업</h2><span class="count-pill" id="tableCount">6</span></div><div class="table-actions"><label class="search"><svg><use href="#search"/></svg><input id="searchInput" aria-label="기업 검색" placeholder="기업, 국가, 산업 검색"><kbd>/</kbd></label><button class="icon-button" id="sortBtn" aria-label="점수순 정렬">⇅</button></div></div><div class="table-wrap"><table><thead><tr><th>기업명</th><th>국가</th><th>산업</th><th>경제안보 리스크</th><th class="score-cell">종합 점수 ↓</th><th>최근 동향</th><th></th></tr></thead><tbody id="companyRows"></tbody></table><div class="empty-state" id="emptyState" hidden>조건에 맞는 기업이 없습니다.<br><button id="resetFilters">전체 기업 보기</button></div></div><div class="table-footer"><span id="resultCount">6개 기업 중 6개 표시</span><span>샘플 데이터 <span class="dot mint"></span> 탐색 가능</span></div></section>
+   <section class="panel signals"><div class="panel-heading compact"><h2>인텔리전스 피드 <span class="feed-count">3</span></h2><button class="text-button" id="allFeedBtn">모두 보기 <svg><use href="#arrow"/></svg></button></div><div class="feed-item"><div class="feed-icon amber-icon"><svg><use href="#shield"/></svg></div><div><span class="feed-category amber">정책 · 규제</span><h4>반도체 수출 규제, 공급망 재편 가속</h4><p>대체 공급망 확보의 중요성이 커지고 있습니다.</p><span class="feed-time">2시간 전 <b>·</b> 데모 시나리오</span></div><i class="unread"></i></div><div class="feed-item"><div class="feed-icon mint-icon"><svg><use href="#trend"/></svg></div><div><span class="feed-category mint-text">시장 · 기회</span><h4>핵심 광물 투자, 새로운 흐름</h4><p>북미·호주 지역 신규 프로젝트를 살펴보세요.</p><span class="feed-time">4시간 전 <b>·</b> 데모 시나리오</span></div></div><div class="feed-bottom"><svg><use href="#spark"/></svg><span>오늘의 신호를 AI와 함께 살펴보세요.</span><button id="feedAiBtn" aria-label="AI 인사이트 열기">↗</button></div></section>
+  </div>
+  <footer><span><span class="footer-logo">ATLAS</span> Intelligence for a connected world.</span><span>프로토타입 · 모든 수치는 시연용 가상 데이터입니다.</span></footer>
+ </main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close icon-button" id="modalClose" aria-label="닫기">×</button><div class="eyebrow" id="modalEyebrow">ATLAS INTELLIGENCE</div><h2 id="modalTitle"></h2><div id="modalBody"></div></section></div><div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
